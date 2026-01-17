@@ -94,7 +94,7 @@ button {
 }
 
 ::placeholder {
-    color: var(--black);
+    color: var(--Black);
     opacity: 0.5;
 }
 
@@ -285,6 +285,10 @@ button {
     text-align: end;
 }
 
+.tip--two{
+    min-width: 660px;
+}
+
 .content--tips__triangle--img{
      transform: rotate(-15deg);
      position: relative;
@@ -468,10 +472,9 @@ color: var(--Orange);
     padding-top: 270px;
 }
 
-.right--benefit p{
+.right--benefit {
     text-align: end;
 }
-
 
 .section--benefits__content--image{
     justify-self: center;
@@ -482,15 +485,47 @@ color: var(--Orange);
 footer{
     background-color: var(--Green);
     border-radius: 20px 20px 0 0;
+    font-size: var(--font-size-16);
+    color: var(--White);
 }
 
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
 
+.footer--list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.footer--subscribe{
+    text-align: start;
+}
 
+input{
+    background-color: var(--White);
+    height: 75px;
+    max-width: 500px;
+}
 
+.footer__terms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid white;
+}
 
-
-.footer--terms
+.footer--link{
+    text-decoration: none;
+    color: var(--White);
+}
 
 
 
