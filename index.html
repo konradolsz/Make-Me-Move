@@ -3,168 +3,220 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1440" />
     <title>Truck Pit Stop</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header__container">
-            <nav class="nav">
-                <div class="nav__logo">
-                    <p class="logo__title visually--hidden">Truck Pit Stop</p>
-                    <img class="logo-icon" src="/assets/Logo.svg" width="172" alt="website-logo">
-                </div>
-                <ul class="nav__list">
-                    <li class="nav__item"> <a class="nav__link" href="#">Tricks & Tips </a> </li>
-                    <li class="nav__item"> <a class="nav__link" href="#">Challenge </a> </li>
-                    <li class="nav__item"> <a class="nav__link" href="#">Benefits </a> </li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header container">
+        <nav id="page-top" class="header__nav">
+            <div class="header__nav-logo">
+                <p class="header__nav-title visually--hidden">Truck Pit Stop</p>
+                <img class="header__nav-logo-image" src="./assets/logo.svg" width="172" alt="website-logo">
+            </div>
+            <ul class="header__nav-list">
+                <li class="header__nav-item"> <a class="header__nav-link" href="#tips">Tricks & Tips</a> </li>
+                <li class="header__nav-item"> <a class="header__nav-link" href="#challenge">Challenge</a> </li>
+                <li class="header__nav-item"> <a class="header__nav-link" href="#benefits">Benefits</a> </li>
+            </ul>
+        </nav>
 
-        <div class="header-description small-container">
-            <div class="header--description__content">
-                <h1>
-                    Your back Hurts.<br>Your Cab Doesn't.
-                </h1>
-                <div class="header--description__content__text" >
-                    <p>Days and nights on the road. Concrete back, <span class="extrabold">stiff neck, heavy eyes</span>. Sitting kills slowly - but every stop, fuel break and CB call is a <span class="extrabold">chance to move.</span></p>
-                    <button>Hit the gas</button>
+        <section class="hero container">
+            <div class="hero__container small-container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Your back Hurts.<br>Your Cab Doesn't.
+                    </h1>
+                    <div class="hero__text">
+                        <p>Days and nights on the road. <span class="text-emphasis">Concrete back, stiff neck, heavy
+                                eyes</span>. Sitting kills slowly - but every stop, fuel break and CB call is a <span
+                                class="text-emphasis">chance to move.</span></p>
+                        <button class="hero__cta" onclick="window.location.href='#challenge'">Race now</button>
+                    </div>
                 </div>
+                <img class="hero__image" src="./assets/cab.svg" width="630" alt="truck-cab-graphic">
             </div>
-            <div class="header--description__img">
-                <img class="header-description__img--cab" src="/assets/final cab.png" width="630" alt="Truck--cab--graphic">
-            </div>
-        </div>
+        </section>
     </header>
-    
+
     <main>
-        <section class="section--one container">
-            <img class="content--tips__stop--img" src="/assets/STOP sign.png" width="200" alt="STOP-sign-image">
-            <div class="content--tips small-container">
-                <div class="content--tips__title">
-                    <h2 class="tips--heading">Align your axles</h2>
-                    <p class="tips--subtitle">Each one <span class="extrabold">already</span> fits into your daily drive.</p>
+        <section id="tips" class="tips-section tips-section--primary container">
+            <img class="tips-section__decoration tips-section__decoration--stop" src="./assets/stopSign.svg" width="200"
+                alt="stop-sign-image">
+            <div class="tips-section__content small-container">
+                <div class="tips-section__header">
+                    <h2 class="tips-section__title">Align your axles</h2>
+                    <p class="tips-section__subtitle">Each one <span class="text-emphasis">already</span> fits into your
+                        daily drive.</p>
                 </div>
 
-                <div class="tip">
+                <article class="tip">
                     <div class="tip--content">
-                        <img class="tip--number--1" src="/assets/numbers svg/1.svg" width="200" alt="number one sign">
+                        <img class="tip__number tip__number--1" src="./assets/numbersSvg/signOne.svg" width="200"
+                            alt="number-one-sign">
                         <h3>Wiper hands</h3>
-                        <p>Swing before you wipe. Dirty windshield is your signal. <span class="extrabold">Arms left-right-left-right.</span> Loosen up before you clean. Simple as that.</p>
+                        <p>Swing before you wipe. Dirty windshield is your signal. <span
+                                class="text-emphasis">left-rght-left-right.</span> Loosen up before you clean. Simple as
+                            that.</p>
                     </div>
-                    <img class="tip--img--right" src="/assets/wiper hands no inside.svg" width="570" alt="hands wiper picture">
-                </div>
+                    <img class="tip__image tip__image--right" src="./assets/wiperHands.svg" width="570"
+                        alt="hands-wiper-picture">
+                </article>
 
-                <div class="tip">
-                    <div class="tip--content tip--right tip-two">
-                        <img class="tip--number--2" src="/assets/numbers svg/2.svg" width="200" alt="number one sign">
+                <article class="tip">
+                    <div class="tip--content tip__content--right">
+                        <img class="tip__number tip__number--2" src="./assets/numbersSvg/signTwo.svg" width="200"
+                            alt="number-two-sign">
                         <h3>Cabin shake</h3>
-                        <p>Turn up the music and <span class="extrabold">shake</span>. Every stop is a chance. Shoulders, arms, upper body <span class="extrabold">- loosen what is tightened.</span> Music makes it real.</p>
+                        <p>Turn up the music and <span class="text-emphasis">shake your cabin.</span> Every stop is a
+                            chance. Shoulders, arms, upper body <span class="text-emphasis">- loosen what is tightened.
+                                Music makes it real.</span></p>
                     </div>
-                    <img class="tip--img-left" src="/assets/cabs wiggle finish.svg" width="570" alt="hands wiper picture">
-                </div>
+                    <img class="tip__image tip__image--left" src="./assets/cabsWiggle.svg" width="570"
+                        alt="hands-wiper-picture">
+                </article>
             </div>
-            <img class="content--tips__triangle--img" src="/assets/triangle.svg" width="275" alt="triangle sign img">
+            <img id="challenge" class="tips-section__decoration tips-section__decoration--triangle"
+                src="./assets/triangle.svg" width="275" alt="triangle-sign-img">
         </section>
 
-        <div class="section--two challenge small-container">
-            <div class="challenge--content">
-                <div class="challenge--text">
+
+
+        <section class="challenge small-container">
+            <div class="challenge__content">
+                <div class="challenge__text">
                     <h2>Challenge</h2>
                     <h3>Tire change</h3>
-                    <p>Take a part in the truck driver challenge! Record yourself <span class="extrabold">changing a tire</span> in the <span class="extrabold">fastest time possible</span> and share it
-                    with other drivers on social media!</p>
+                    <p>
+                        Take part in the truck driver challenge! Record yourself <span class="text-emphasis">changing a
+                            tire</span> in the <span class="text-emphasis">fastest time possible</span> and share it
+                        with other drivers on social media!
+                    </p>
+                    <img class="challenge__text--jackNew" src="./assets/jackNew.svg" width="350" alt="jack-new-item">
                 </div>
-                <img class="challenge--img" src="/assets/tire change.svg" width="432" alt="tire change img">
+                <img class="challenge__image" src="./assets/tireChange.svg" width="432" alt="tire-change-img">
             </div>
-        </div>
+        </section>
 
-        <section class="section--three container">
-            <img class="content--tips__cone--img" src="/assets/traffic cone.svg" width="275" alt="traffic cone image">
-            <div class="content--tips--two small-container">
-                <div class="tip tip--three">
-                    <div class="tip--content">
-                        <img class="tip--number--3" src="/assets/numbers svg/3.svg" width="200" alt="number three sign">
+
+
+        <section class="tips-section tips-section--secondary container">
+            <img class="tips-section__decoration tips-section__decoration--cone" src="./assets/cone.svg" width="275"
+                alt="traffic-cone-image">
+            <h2 class="visually--hidden">More Tips</h2>
+            <div class="tips-section__content tips-section__content--second small-container">
+
+                <article class="tip tip--three">
+                    <div class="tip--content tip__content--three">
+                        <img class="tip__number tip__number--3" src="./assets/numbersSvg/signThree.svg" width="200"
+                            alt="number-three-sign">
                         <h3>Fuel song</h3>
-                        <p>Make the fuel hose sing. Pretend it’s microphone. Whatever’s on the radio, you sing it. <span class="extrabold">Relaxes your face, your jaw, your whole stop.</span> Make your mouth relaxed before hours of CB talks!!</p>
+                        <p>Make the fuel hose sing. Pretend it's microphone. Whatever's on the radio, you sing it. <span
+                                class="text-emphasis">Relaxes your face, your jaw, your whole stop.</span> Make your
+                            mouth relaxed before hours of CB talks!!</p>
                     </div>
-                    <img class="tip--img--right" src="/assets/Gas pump.svg" width="450" alt="gas pump imgage">
-                </div>
-        
-                <div class="tip tip--four">
-                    <div class="tip--content tip--right">
-                        <img class="tip--number--4" src="/assets/numbers svg/4.svg" width="200" alt="number four sign">
-                        <h3>Tire walk</h3>
-                        <p>Inflate with your own air. Skip the pump. Use your diaphragm instead. <span class="extrabold">Your breathing muscles get stronger.</span> Your tires get filled.</p>
-                    </div>
-                    <img class="tip--img--left" src="/assets/falt fat tire.svg" width="450" alt="flat tire image">
-                </div>
+                    <img class="tip__image--right" src="./assets/gasPump.svg" width="370" alt="gas-pump-image">
+                </article>
 
-                <div class="tip--five">
-                    <div class="tip--content--five">
-                        <img class="tip--number--5" src="/assets/numbers svg/5.svg" width="200" alt="number five sign">
-                        <div class="tip--content--five__text">
+                <article class="tip tip--four">
+                    <div class="tip--content tip__content--right">
+                        <img class="tip__number tip__number--4" src="./assets/numbersSvg/signFour.svg" width="200"
+                            alt="number-four-sign">
+                        <h3>Tire walk</h3>
+                        <p>Inflate with your own air. Skip the pump. Use your diaphragm instead. <span
+                                class="text-emphasis">Your breathing muscles get stronger.</span> Your tires get filled.
+                        </p>
+                    </div>
+                    <img class="tip__image tip__image--left" src="./assets/flatTire.svg" width="450"
+                        alt="flat-tire-image">
+                </article>
+
+                <article class="tip--five">
+                    <div class="tip__content--five">
+                        <img class="tip__number tip__number--5" src="./assets/numbersSvg/signFive.svg" width="200"
+                            alt="number-five-sign">
+                        <div class="tip__content--text">
                             <h3>Road talk</h3>
-                            <p>Answer the CB and <span class="extrabold">relax your hands</span>. When someone asks how the road is, your hands come alive. Make light and indicator dance.</p>
+                            <p>Answer the CB and <span class="text-emphasis">relax your hands</span>. When someone asks
+                                how the road is, your hands come alive. Make light and indicator dance.</p>
                         </div>
                     </div>
-                    <img class="tip--img--center" src="/assets/CB radio.svg" width="1220" alt="CB radio image">
-                </div>
+                    <img class="tip__image tip__image--center" src="./assets/cbRadio.svg" width="1220"
+                        alt="CB-radio-image">
+                </article>
             </div>
         </section>
 
-        <section class="small-container">
-            <div class="section--benefits">
-                <div class="section--benefits__heading">
-                    <img class="section--benefits__heading--triangle" src="/assets/triangle.svg" width="230" alt="triangle sign image">
-                    <h2 class="section--benefits__title">These exercises act like a line assistant</h2>
-                    <img class="section--benefits__heading--cone" src="/assets/traffic cone.svg" width="230" alt="traffic cone image">
+
+
+        <section id="benefits" class="benefits-section">
+            <div class="section--benefits small-container">
+                <div class="benefits__header">
+                    <img class="benefits__decoration benefits__decoration--triangle" src="./assets/triangle.svg"
+                        width="230" alt="triangle-sign-image">
+                    <h2 class="benefits__title">These exercises act like a line assistant</h2>
+                    <img class="benefits__decoration benefits__decoration--cone" src="./assets/cone.svg" width="230"
+                        alt="traffic-cone-image">
                 </div>
-                <div class= "section--benefits__content">
-                    <div class="side--benefit">
+
+                <div class="benefits__content">
+                    <div class="benefit-card benefit-card--left">
                         <h3>Auto Hold for your spine</h3>
-                        <p>These exercises <span class="extrabold">lock in back strength</span> like Auto Hold on a hill.</p>
+                        <p>These exercises <span class="text-emphasis">lock in back strength</span> like Auto Hold on a
+                            hill.</p>
                     </div>
-                    <div class="middle--benefit">
+                    <div class="benefit-card benefit-card--middle">
                         <h3>Tempomat for Your Energy</h3>
-                        <p>They <span class="extrabold">keep your power steady</span> over 500 km hauls-no crashes, full throttle without fatigue.</p>
+                        <p>They <span class="text-emphasis">keep your power steady</span> over 500 km hauls-no crashes,
+                            full throttle without fatigue.</p>
                     </div>
-                    <div class="side--benefit right--benefit ">
-                        <h3>Tire Assist for Strength</h3>
-                        <p>They build <span class="extrabold">diaphragm power</span> like inflating tires-deeper breaths for sharper focus on long drives.</p>
+                    <div class="benefit-card benefit-card--right">
+                        <h3>Tire Assist<br> for Strength</h3>
+                        <p>They build <span class="text-emphasis">diaphragm power</span> like inflating tires-deeper
+                            breaths for sharper focus on long drives.</p>
                     </div>
                 </div>
-                <img class="section--benefits__content--image" class="" src="/assets/half of big wheel.svg" width="1000" alt="half of wheel image">
+                <img class="benefits__image" src="./assets/halfWheel.svg" width="1000" alt="half-wheel-image">
             </div>
         </section>
+    </main>
 
-        <footer class="footer container">
-            <div class="small-container">
-                <div class="footer__content">
-                    <img src="/assets/Logo.svg" width="200" alt="logo image">
-                    <ul class="footer--list">
-                        <li class="footer--item" ><a class="footer--link" href="#">Tricks & Tips</a></li>
-                        <li class="footer--item" ><a class="footer--link" href="#">Benefits</a></li>
-                        <li class="footer--item" ><a class="footer--link" href="#">Challenge</a></li>
-                    </ul>
-                    <div class="footer--subscribe">
-                        <p>There are new tips every month.<br>Follow our newsletter to stay on top of your adventures.</p>
-                        <input type="text" name="gmail">
+    <footer class="footer container">
+        <div class="small-container">
+            <div class="footer__content">
+                <a href="#page-top"><img class="footer__logo" src="./assets/logo.svg" width="200" alt="logo-image"></a>
+                <ul class="footer__list">
+                    <li class="footer__list--item"><a class="footer__list--link" href="#">Tricks & Tips</a></li>
+                    <li class="footer__list--item"><a class="footer__list--link" href="#">Challenge</a></li>
+                    <li class="footer__list--item"><a class="footer__list--link" href="#">Benefits</a></li>
+                </ul>
+                <div class="footer__subscribe">
+                    <p>There is new challenge every month.<br>Follow our newsletter to stay on top of your adventures.</p>
+                    <div class="footer__subscribe--form">
+                        <input class="footer__subscribe--input" type="email" name="email" placeholder="your@email.com">
+                        <button class="footer__subscribe--button">Join</button>
                     </div>
                 </div>
-                <div class="footer__terms">
-                    <p>Copyright © 2026 Truck Pit Stop. All rights reserved.</p>
-                    <p>Terms of use</p>
-                    <p>Privacy Policy</p>
-                </div>
             </div>
-        </footer>
+            <div class="footer__terms">
+                <p>Copyright © 2026 Truck Pit Stop. All rights reserved.</p>
+                <a class="footer__terms--link" href="#">
+                    <p>Terms of use</p>
+                </a>
+                <a class="footer__terms--link" href="#">
+                    <p>Privacy Policy</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 
 </html>
